@@ -2,13 +2,13 @@ package vehicles;
 
 public class Airplane {
 	private int kind;
-	private FFJ hIF;
+	private Flying hIF;
 
 	public Airplane(int i) {
 		kind = i;
 	}
 
-	public Airplane(int i, FFJ fly) {
+	public Airplane(int i, Flying fly) {
 		kind = i;
 		hIF = fly;
 	}
