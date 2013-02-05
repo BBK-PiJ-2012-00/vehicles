@@ -10,4 +10,9 @@ public class FFJ implements Flying {
 		return "Like a fighter jet";
 	}
 
+	@Override
+	public String howILliftOff() {
+		return "Like a fighter jet";
+	}
+
 }

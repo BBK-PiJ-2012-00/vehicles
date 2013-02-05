@@ -73,5 +73,20 @@ public class AirplaneTest {
 		
 		assertEquals("Wrong Anser!", stringReturned, expectedOutput);
 	}
+	
+	@Test
+	public void test5() {
+		
+		String expectedOutput = "Vertically";
+		String stringReturned = null;
+		
+		Flying fly = new Harrier();
+		
+		Airplane classUnderTest = new Airplane(1, fly);
+		
+		stringReturned = classUnderTest.howDoYouLiftOff();
+		
+		assertEquals("Wrong Answer!", stringReturned, expectedOutput);
+	}
 
 }

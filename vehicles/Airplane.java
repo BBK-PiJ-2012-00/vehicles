@@ -19,12 +19,7 @@ public class Airplane {
 	}
 
 	public String howDoYouLiftOff() {
-		switch (kind) {
-		case 1: return "Vertically";
-		case 2: return "I lift off";
-		case 3: return "Horizontally";
-		default: return null;
-		}
+		return hIF.howILliftOff();
 	}
 
 }

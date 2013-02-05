@@ -7,4 +7,9 @@ public class ModelAirPlane implements Flying {
 		return "I don't fly";
 	}
 
+	@Override
+	public String howILliftOff() {
+		return "I don't take off";
+	}
+
 }
