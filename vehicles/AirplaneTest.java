@@ -55,9 +55,23 @@ public class AirplaneTest {
 		
 		stringReturned = classUnderTest.howDoYouFly();
 		
-		assertEquals("Wrong Answer!", stringReturned, expectedOutput);
+		assertEquals("Wrong Answer!", stringReturned, expectedOutput);		
 		
+	}
+	
+	@Test
+	public void test4() {
 		
+		String expectedOutput = "I fly like a harrier";
+		String stringReturned = null;
+		
+		Flying fly = new Harrier();
+		
+		Airplane classUnderTest = new Airplane(1, fly);		
+		
+		stringReturned = classUnderTest.howDoYouFly();
+		
+		assertEquals("Wrong Anser!", stringReturned, expectedOutput);
 	}
 
 }
