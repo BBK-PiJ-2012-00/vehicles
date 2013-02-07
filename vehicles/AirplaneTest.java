@@ -25,11 +25,12 @@ public class AirplaneTest {
 		
 		stringReturned = classUnderTest.howDoYouFly();
 		
-		assertEquals("Wrong answer!", stringReturned, expectedOutput);
+		assertEquals("Wrong answer!", stringReturned, expectedOutput); //"Wrong answer!" string displays as error msg when strings don't match
 		
 		//fail("Not yet implemented");
 	}
 	
+	/**
 	@Test
 	public void test2() {
 		String expectedOutput = "Vertically";
@@ -42,6 +43,7 @@ public class AirplaneTest {
 		assertEquals("Wrong answer!", stringReturned, expectedOutput);
 		
 	}
+	*/
 	
 	@Test
 	public void test3() {
@@ -71,7 +73,7 @@ public class AirplaneTest {
 		
 		stringReturned = classUnderTest.howDoYouFly();
 		
-		assertEquals("Wrong Anser!", stringReturned, expectedOutput);
+		assertEquals("Wrong Answer!", stringReturned, expectedOutput);
 	}
 	
 	@Test
@@ -88,5 +90,21 @@ public class AirplaneTest {
 		
 		assertEquals("Wrong Answer!", stringReturned, expectedOutput);
 	}
+	
+	@Test
+	public void test6() {
+		
+		String expectedOutput = "Like a fighter jet";
+		String stringReturned = null;
+		
+		Flying fly = new FFJ();
+		Airplane classUnderTest = new Airplane(1, fly);
+		
+		stringReturned = classUnderTest.howDoYouFly();
+		
+		assertEquals("Wrong answer!", stringReturned, expectedOutput);
+	}
+		
+		
 
 }
